@@ -11,7 +11,7 @@
       <meta name="copyright" content="PakResult">
       <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-      <title>PakResult | Shop</title>
+      <title>PakResult | Prices</title>
       <link rel="icon" href="assets/images/icon.png" style="width: 50%">
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,7 +20,54 @@
     <link rel="stylesheet" href="assets/css/owl.css">
 
   </head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
   <body>
 
     <!-- ***** Preloader Start ***** -->
@@ -46,12 +93,12 @@
                 <a class="nav-link" href="https://www.pakresult.com/home/">Home
                 </a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="https://shop.pakresult.com">Shop
-                  <span class="sr-only">(current)</span></a>
-              </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://shop.pakresult.com/prices/">Prices</a>
+                <a class="nav-link" href="https://shop.pakresult.com">Shop</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="https://shop.pakresult.com/prices/">Prices
+                  <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://shop.pakresult.com/status">Order Status</a>
@@ -70,8 +117,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Shop | PakResult</h1>
-            <span>Zipper Hoodies Available Now!</span>
+            <h1>Prices And Procedure</h1>
+            <span></span>
           </div>
         </div>
       </div>
@@ -79,49 +126,33 @@
 
     <div class="single-services">
       <div class="container">
-        <div class="row" id="tabs"><div class="col-md-12">
-            The Details about Prices and Order Procedure is given on the Prices Page For that - <a href="https://shop.pakresult.com/prices/">Click Here</a><br>Contact us here for any query or complaint : <a href="https://www.pakresult.com/contact/">Message Us!<br></a> Or Feel Free to Email Us at : <a href="mailto:info@pakresult.com">info@pakresult.com</a><br><br></div>
-          <div class="col-md-4">
-            <ul>
-              <li><a href='#tabs-1'>BS CS<i class="fa fa-angle-right"></i></a></li>
-              <li><a href='#tabs-2'>BS CE<i class="fa fa-angle-right"></i></a></li>
-              <li><a href='#tabs-3'>BS EE<i class="fa fa-angle-right"></i></a></li>
-              <li><a href='#tabs-4'>BS ME<i class="fa fa-angle-right"></i></a></li>
-              <li><a href='#tabs-5'>BS MME<i class="fa fa-angle-right"></i></a></li>
-              <li><a href='#tabs-6'>BS PHY<i class="fa fa-angle-right"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-md-8">
+        <div class="row" id="tabs">
+          <div class="col-md-12"><h6>There are 2 options available : <br><b>&#8226;Standard Zipper Hoodies</b> will have a Department Design printed on it's back and a University Logo / Monogram on the Top-Left of the front side.<br><b>&#8226;Custom Name Zipper Hoodies</b> will also have all the same things as the Standard version and an additional Text on the back, be it your Name or Custom Text<hr></h6>To place an order contact your respective CR/GR or contact us here for any query or complaint : <a href="https://www.pakresult.com/contact/">Message Us!<br></a> Or Feel Free to Email Us at : <a href="mailto:info@pakresult.com">info@pakresult.com</a><br>Check Designs for all Departments <a href="https://shop.pakresult.com">Here!</a><br><br>
             <section class='tabs-content'>
-              <article id='tabs-1'>
-                <img src="assets/images/mockups/CS.jpg" alt="BS Computer Sciences">
-                <h4>BS Computer Sciences</h4><a href="assets/images/mockups/CSdisp.jpg" download>Download Images</a>
-              </article>
-              
-              <article id='tabs-2'>
-                <img src="assets/images/mockups/CE.jpg" alt="BS Chemical Engineering">
-                <h4>BS Chemical Engineering</h4><a href="assets/images/mockups/CEdisp.jpg" download>Download Images</a>
-              </article>
-        
-                <article id='tabs-3'>
-                <img src="assets/images/mockups/EE.jpg" alt="BS Electrical Engineering">
-                <h4>BS Electrical Engineering</h4><a href="assets/images/mockups/EEdisp.jpg" download>Download Images</a>
-              </article>
-              
-              <article id='tabs-4'>
-                <img src="assets/images/mockups/ME.jpg" alt="BS Mechanical Engineering">
-                  <h4>BS Mechanical Engineering</h4><a href="assets/images/mockups/MEdisp.jpg" download>Download Images</a>
-              </article>
+              <div class="columns">
+  <ul class="price">
+    <li class="header">Standard</li>
+    <li class="grey">Rs. 1400 + 50 Delivery</li>
+    <li>Zipper Hoodie &#10004;</li>
+    <li>Department Design (Back) &#10004;</li>
+    <li>PIEAS Logo (Front) &#10004;</li>
+    <li>&#10006; Custom Name &#10006;</li>
+  </ul>
+</div>
                 
-                <article id='tabs-5'>
-                <img src="assets/images/mockups/MME.jpg" alt="BS Metallurgy & Material Engineering">
-                <h4>BS Metallurgy & Material Engineering</h4><a href="assets/images/mockups/MMEdisp.jpg" download>Download Images</a>
-              </article>
-              
-              <article id='tabs-6'>
-                <img src="assets/images/mockups/PHY.jpg" alt="BS Physics">
-                <h4>BS Physics</h4><a href="assets/images/mockups/PHYdisp.jpg" download>Download Images</a>
-              </article>
+                <div class="columns"><img src="assets/images/mockups/custom.jpg"></div>
+                
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:darkred">Custom Name</li>
+    <li class="grey">Rs. 1600 + 50 Delivery</li>
+    <li>Zipper Hoodie &#10004;</li>
+    <li>Department Design (Back) &#10004;</li>
+    <li>PIEAS Logo (Front) &#10004;</li>
+    <li>&#10004; Custom Name &#10004;</li>
+  </ul>
+</div>
+
             </section>
           </div>
         </div>
